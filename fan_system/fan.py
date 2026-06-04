@@ -52,3 +52,9 @@ class Fan:
 
     def is_on(self):
             return "ON" if self.__on else "OFF"
+
+    def display(self):
+        if self.__on:
+            return f"Speed: {self.get_speed()}, Color: {self.__color}, Radius: {self.__radius}"
+        else:
+            return f"Fan is OFF, Color: {self.__color}, Radius: {self.__radius}"    
