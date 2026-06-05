@@ -1,6 +1,8 @@
 from car import Car
 car = Car(2025, "992 GT3 RS")
 
+print("Car:", car.get_year_model(), car.get_make())
+
 print("Accelerating:")
 for _ in range(5):
     car.accelerate()
